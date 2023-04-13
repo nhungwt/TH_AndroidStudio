@@ -6,13 +6,17 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.th_4_13.adapter.ViewPagerFragmentAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigation;
     ViewPager viewPagerContainer;
+    FloatingActionButton btn_floating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         viewPagerContainer = findViewById(R.id.viewPagerContainer);
         bottomNavigation = findViewById(R.id.bottomNavigation);
+        btn_floating = findViewById(R.id.btn_floating);
+
 //        viewPagerContainer.setOnPageChangeListener();
         ViewPagerFragmentAdapter viewPagerFragmentAdapter = new ViewPagerFragmentAdapter(getSupportFragmentManager(), 3);
         viewPagerContainer.setAdapter(viewPagerFragmentAdapter);
@@ -43,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
                         viewPagerContainer.setCurrentItem(0);
                         return true;
                 }
+            }
+        });
+
+        btn_floating.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }

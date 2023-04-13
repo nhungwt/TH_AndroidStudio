@@ -245,4 +245,11 @@ Trong class TaskListAdapter:
 &nbsp;
 ## Floating Button
 ---
+- B1: Thêm vào file xml <Floatting ...>
+- B2: Lắng nghe và xử lý sự kiện hệt như một nút thông thường
 
+&nbsp;
+## Database
+---
+- B1: File xử lý và làm việc với DB: DatabaseHandler.class
+- Sử dụng
