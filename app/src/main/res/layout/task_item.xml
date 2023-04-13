@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_id"
+        android:text="ID"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_name"
+        android:text="Name"
+        android:layout_alignBottom="@+id/task_id"
+        android:layout_toEndOf="@+id/task_id"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_deadline"
+        android:text="Dealine"
+        android:maxLines="3"
+        android:layout_alignStart="@+id/task_id"
+        android:layout_below="@+id/task_id"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_content"
+        android:text="Content"
+        android:maxLines="3"
+        android:layout_alignStart="@+id/task_id"
+        android:layout_below="@+id/task_deadline"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_status"
+        android:layout_alignStart="@+id/task_id"
+        android:layout_below="@+id/task_content"
+        android:layout_marginTop="5dp"
+        android:text="Status"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_colaboration"
+        android:text="Colaboration"
+        android:layout_alignBottom="@+id/task_status"
+        android:layout_toEndOf="@+id/task_status"
+        android:layout_marginStart="20dp"
+        />
+
+</RelativeLayout>
