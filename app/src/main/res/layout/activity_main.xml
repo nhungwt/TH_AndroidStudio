@@ -6,21 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/fragment_container"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottomNavigation" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bottomNavigation"
-        app:menu="@menu/bottom_navigation"
-        app:itemIconTint="@color/purple_700"
-        app:itemTextColor="@color/purple_700"
-        app:itemBackground="@color/purple_200"
         android:layout_alignParentBottom="true"
-        />
+        app:itemBackground="@color/purple_200"
+        app:itemIconTint="@color/navigation_selected"
+        app:itemTextColor="@color/navigation_selected"
+        app:menu="@menu/bottom_navigation" />
 
 </RelativeLayout>

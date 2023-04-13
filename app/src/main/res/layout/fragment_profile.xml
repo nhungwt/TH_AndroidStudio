@@ -6,9 +6,96 @@
     tools:context=".fragment.ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_baseline_engineering_24" />
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/avatar"
+            android:text="Phạm Hồng Nhung"
+            android:layout_toEndOf="@+id/avatar"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/full_name"
+            android:layout_below="@+id/full_name"
+            android:layout_marginTop="20dp"
+            android:text="Nu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/soTruong"
+            android:layout_alignStart="@+id/avatar"
+            android:layout_below="@+id/avatar"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sở trường"
+                android:textSize="25dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Ăn"
+                android:layout_marginStart="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Chơi"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/soDoan"
+            android:layout_alignStart="@+id/avatar"
+            android:layout_below="@+id/soTruong"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sở đoản"
+                android:textSize="25dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Hay quên"
+                android:layout_marginStart="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- ..."
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
 
 </FrameLayout>
