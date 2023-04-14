@@ -44,14 +44,14 @@ public class ListFragment extends Fragment {
 //        }
 
         DatabaseHandler db = new DatabaseHandler(view.getContext());
-        try {
-            db.addTask(new Task(0, "Nấu cơm123", "Cần nấu cơm", "New",
-                    "14/4/2023", false));
-            db.addTask(new Task(0, "Nấu cơm 2", "Cần nấu cơm", "New",
-                    "15/4/2023", false));
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            db.addTask(new Task(0, "Nấu cơm123", "Cần nấu cơm", "New",
+//                    "14/4/2023", false));
+//            db.addTask(new Task(0, "Nấu cơm 2", "Cần nấu cơm", "New",
+//                    "15/4/2023", false));
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
 
         List<Task> mList = null;
         try {
@@ -59,11 +59,7 @@ public class ListFragment extends Fragment {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-//        String[] st = new String[mList.size()];
-//        int k = 0;
-//        for (Task i : mList) {
-//            st[k++] = i.getId() + " " + i.getName();
-//        }
+
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(
                 view.getContext(), LinearLayoutManager.VERTICAL, false);
